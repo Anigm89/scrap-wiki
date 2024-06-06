@@ -82,16 +82,16 @@ function datosRapero(linkrapero){
         const nombre = $('.mw-page-title-main').text();
     
 
-        const imgs = [];
-        $('img').each((index,element) => {
-            const img = $(element).attr('src');
-            imgs.push(img)
-        })
-        const textos = [];
-        $('p').each((i,elem) => {
-            const texto = $(elem);
-            textos.push(texto)
-        })
+    const imgs = [];
+    $('img').each((index,element) => {
+        const img = $(element).attr('src');
+        imgs.push(img)
+    })
+    const textos = [];
+    $('p').each((i,elem) => {
+        const texto = $(elem);
+        textos.push(texto)
+    })
 
 
     return { nombre, imgs, textos };
